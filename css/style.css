@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa; /* Warna latar belakang yang lebih cerah */
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff; /* Putih bersih */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 2em; /* Ukuran font lebih besar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 15px; /* Padding yang lebih besar untuk ruang yang lebih nyaman */
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #4CAF50; /* Warna latar belakang header */
+    color: white;
+    font-weight: bold; /* Tebal untuk teks header */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Warna saat hover */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"],
+select {
+    width: 95%;
+    padding: 12px; /* Padding yang lebih besar */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan dalam */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Warna border saat fokus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Bayangan luar saat fokus */
+}
+
+button {
+    background-color: #4CAF50; /* Warna tombol */
+    color: white;
+    border: none;
+    padding: 12px 15px; /* Padding tombol yang lebih besar */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Transisi efek */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna tombol saat hover */
+    transform: translateY(-2px); /* Efek angkat tombol saat hver */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
