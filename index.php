@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
 include '../film-kartun-favorit/db/database.php';  
 include '../film-kartun-favorit/functions.php';
+=======
+include '../db/database.php';  
+include 'functions.php';
+>>>>>>> cc7d696d4007fa85a008c64e920145611c5a1a5c
 
 // Menghubungkan ke database
 $db = new mysqli($hostname, $username, $password, $db_name);
