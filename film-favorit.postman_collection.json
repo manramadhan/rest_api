@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "8512de1e-96d1-4421-a9be-3fd72f3ea4a4",
+		"name": "film-favorit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32332501"
+	},
+	"item": [
+		{
+			"name": "Get-film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}api/film.php",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"film.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-film",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "cars",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "film masa kecil",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "release_year",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef95a8e-39a2-4870-8d47-1ec26f7241d4"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}api/film.php?title=cars&description",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"film.php"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "cars"
+						},
+						{
+							"key": "description",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-film",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "movie_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}api/film.php",
+					"host": [
+						"{{base_url}}api"
+					],
+					"path": [
+						"film.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost/belajar_api/film-kartun-favorit/",
+			"type": "string"
+		}
+	]
+}

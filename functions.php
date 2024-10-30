@@ -1,10 +1,16 @@
 <?php
-include 'db/database.php';
+include '../film-kartun-favorit/db/database.php';
 
 // Fetch all movies
 function fetchMovies($db) {
-    $sql = "SELECT movies.*, categories.name AS category_name FROM movies LEFT JOIN categories ON movies.category_id = categories.category_id";
-    return $db->query($sql);
+    $sql = "SELECT movies.*, categories.category_name AS category_name FROM movies LEFT JOIN categories ON movies.category_id = categories.category_id";
+    $result = $db->query($sql);
+    
+    if (!$result) {
+        die("Error fetching movies: " . $db->error); // Debugging error
+    }
+    
+    return $result;
 }
 
 // Fetch all categories

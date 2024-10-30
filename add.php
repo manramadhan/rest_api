@@ -1,6 +1,6 @@
 <?php
-include 'db/database.php';
-include 'functions.php';
+include '../film-kartun-favorit/db/database.php';
+include '../film-kartun-favorit/functions.php';
 
 // Menghubungkan ke database
 $db = new mysqli($hostname, $username, $password, $db_name);
